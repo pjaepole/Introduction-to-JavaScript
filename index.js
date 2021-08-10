@@ -39,6 +39,17 @@ Do the following:
 */
 
 
+let person = "free";
+let verdict = "guilty";
+
+if(verdict === "guilty"){
+  person = "prisoner";
+}else{
+  person = "free";
+}
+
+console.log(person)
+
 
 
 
@@ -52,6 +63,8 @@ Do the following:
 
    HINT: look up the Number method
 */
+const year = "1999";
+console.log(Number(year));
 
 
 
@@ -68,7 +81,7 @@ Do the following:
 function multiply(a, b){
   return a * b;
 }
-
+console.log('task 1 d:', multiply (6,9));
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 2 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -81,9 +94,11 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(age){
+  return age * 7;
 }
+
+console.log(dogYears(2))
 
 
 
@@ -114,11 +129,25 @@ Puppies less than 1 year
 NOTE: If done correctly, a weight of 15 lbs and age of 1 year would return 0.44999999999999996
 */  
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(weight , age){
+  if (age >= 1 && weight <=5){
+    return weight * 0.05;
+  }else if (age >=1 && weight>=6 && weight<=10 ){
+    return weight * 0.04;
+  } else if (age >=1 && weight>=11 && weight<=15 ){
+    return weight * 0.03;
+  } else if (age >=1 && weight>=15 ){
+    return weight * 0.02;
+  } else if (age <=1 && age >=0.583){
+    return weight * 0.04;
+  } else if (age <=0.583 && age >=0.333){
+    return weight * 0.05;
+  } else if (age <=0.333 && age >=0.166 ){
+    return weight * 0.1;
+  }
 }
 
-
+console.log(1 , 15)
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
